@@ -3,6 +3,15 @@
 This application contains three distinct exercises, each with multiple sub tasks.
 Each sub task has a corresponding unit test that will pass upon successful implementation.
 
+While a unit test will confirm the correct result, there are multiple ways to achieve this result with
+almost every task.  It is recommended to follow Ember.js conventions where appropriate, and avoid using any
+additional libraries such as jquery, underscore.js, etc.
+
+Each task makes heavy use of ember components, so you are encourage to review ember component documentation to
+better understand the component lifecycle and the many methods, properties, and events that the ember framework provides.
+
+[Ember Component Documentation](http://emberjs.com/api/classes/Ember.Component.html)
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
