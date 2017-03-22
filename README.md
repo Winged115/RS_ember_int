@@ -12,6 +12,10 @@ better understand the component lifecycle and the many methods, properties, and 
 
 [Ember Component Documentation](http://emberjs.com/api/classes/Ember.Component.html)
 
+## Submitting your code
+
+To submit your code for review, either push your cloned branch to a new repository under your Github account, or send a compressed file to your HR contact at RedShelf.
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
