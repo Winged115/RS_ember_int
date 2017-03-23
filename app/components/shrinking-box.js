@@ -1,20 +1,28 @@
 import Ember from 'ember';
 
+//Refer to ember component documentation as necessary: http://emberjs.com/api/classes/Ember.Component.html
 export default Ember.Component.extend({
 
-  //set in template
-  message: '',
+  defaultToLarge: Ember.on('init', function(){
+    //http://emberjs.com/api/classes/Ember.Object.html#method_set
+    this.set("isSmall", false);
+  }),
 
-  //set in template
+  //set in html-css-exercise template
+  bigMessage: '',
+
+  //set in html-css-exercise template template
   smallMessage: '',
 
   isSmall: false,
 
   classNames: ["shrinking-box"],
-  classNameBindings: ['isSmall:is-small'],
 
-  click: function(/*evt*/){
+  //https://guides.emberjs.com/v2.12.0/components/customizing-a-components-element/
+  classNameBindings: ['isSmall:is-small:is-large'],
 
+  click: function(){
+    //toggle this component's isSmall property here
   }
 
 });

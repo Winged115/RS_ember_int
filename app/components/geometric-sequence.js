@@ -30,6 +30,9 @@ export default Ember.Component.extend({
   actions:{
     updateSequence: function(){
       var sequence = this.get("geometricSequence");
+      alert("Trying to update sequence (You can remove this alert)");
+
+      //Modify the sequence here
     }
   }
 });
