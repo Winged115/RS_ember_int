@@ -24,7 +24,11 @@ test('it renders small size and appropriate background after clicking', function
 });
 
 test('it returns to full size after clicking the small box', function(assert) {
-  this.render(hbs`{{shrinking-box bigMessage="Big Message!" smallMessage="Small Message!" isSmall=true}}`);
+  this.render(hbs`{{shrinking-box bigMessage="Big Message!" smallMessage="Small Message!"}}`);
+
+  this.$('.shrinking-box').click();
+
+  assert.ok(this.$('.shrinking-box.is-small').length, 'assert is small after one click');
 
   this.$('.shrinking-box').click();
 
