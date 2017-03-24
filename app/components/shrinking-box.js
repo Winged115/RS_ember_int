@@ -1,5 +1,6 @@
 import Ember from 'ember';
 
+//Refer to ember component documentation as necessary: http://emberjs.com/api/classes/Ember.Component.html
 export default Ember.Component.extend({
 
   defaultToLarge: Ember.on('init', function(){
@@ -7,10 +8,10 @@ export default Ember.Component.extend({
     this.set("isSmall", false);
   }),
 
-  //set in template
-  message: '',
+  //set in html-css-exercise template
+  bigMessage: '',
 
-  //set in template
+  //set in html-css-exercise template template
   smallMessage: '',
 
   isSmall: false,
