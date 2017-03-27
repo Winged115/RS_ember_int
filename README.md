@@ -13,8 +13,8 @@ better understand the component lifecycle and the many methods, properties, and 
 
 ## Submitting your code
 
-To submit your code for review, either push your cloned branch to a new repository under your Github account, or send a
-compressed (.zip) file to your HR contact at RedShelf.
+To submit your code for review, either push your cloned branch to a new repository under your Github account, or send a git patch to your HR contact at RedShelf.
+If you choose to create a github repository, please make sure RedShelf can access it.  If the repository is private, please grant access to github user: dbollinger.
 
 ## Prerequisites
 
