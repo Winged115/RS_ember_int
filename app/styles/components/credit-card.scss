@@ -1,7 +1,7 @@
 .credit-card {
     display:inline-block;
     border: 1px solid;
-    border-color: green;
+    border-color: #c0d0e0;
     border-radius: 4px;
     padding: 1em;
     width: 200px;
@@ -11,4 +11,8 @@
 
 .is-expired {
 	border: 1px solid red;
+}
+
+.credit-card:not(.is-expired) {
+	border: 1px solid green;
 }
