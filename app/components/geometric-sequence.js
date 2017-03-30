@@ -30,13 +30,13 @@ export default Ember.Component.extend({
     updateSequence: function(){
       var sequence = this.get("geometricSequence");
       //Modify the sequence here
+      if(sequence[0] === Math.pow(2, 15)) {
+        sequence.setObjects([1, 2]);
+      }
       var highestValue = Math.max.apply(Math, sequence);
       sequence.unshiftObject(highestValue * 2);
       if(sequence.length > 10) {
         sequence.pop();
-      }
-      if(highestValue === Math.pow(2, 15)) {
-        console.log("&&&&&&&&&&&&&&&&&&&&&&")
       }
     }
   }
