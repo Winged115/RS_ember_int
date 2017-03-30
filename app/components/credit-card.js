@@ -27,7 +27,7 @@ export default Ember.Component.extend({
       return true
     } else {
       return false;
-    };
+    }
   })
 /*
 
