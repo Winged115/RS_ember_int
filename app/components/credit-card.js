@@ -20,7 +20,14 @@ export default Ember.Component.extend({
   isExpired: Ember.computed("card.expirationMonth", "card.expirationYear", function() {
     let card = this.get("card");
     let today = this.get("today");
-    return false;
+
+    if(card.expirationYear < today.getFullYear()) {
+      return true
+    } else if(card.expirationYear <= today.getFullYear() && card.expirationMonth < today.getMonth()) {
+      return true
+    } else {
+      return false;
+    };
   })
 /*
 
