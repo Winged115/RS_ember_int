@@ -31,7 +31,7 @@ export default Ember.Component.extend({
       var sequence = this.get("geometricSequence");
       //Modify the sequence here
       if(sequence[0] === Math.pow(2, 15)) {
-        sequence.setObjects([1, 2]);
+        return this.initializeSequence();
       }
       var highestValue = Math.max.apply(Math, sequence);
       sequence.unshiftObject(highestValue * 2);
