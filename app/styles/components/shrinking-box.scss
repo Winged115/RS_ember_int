@@ -10,4 +10,10 @@
 	width: 200px;
 	height: 200px;
 	background-color: rgb(12, 89, 100);
+	font-color: white;
+	transition: width 500ms, height 500ms, background-color 500ms, font-color 500ms;
+}
+
+.is-large {
+	transition: width 500ms, height 500ms, background-color 500ms;
 }

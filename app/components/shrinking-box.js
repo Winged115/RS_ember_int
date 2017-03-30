@@ -9,10 +9,10 @@ export default Ember.Component.extend({
   }),
 
   //set in html-css-exercise template
-  bigMessage: '',
+  bigMessage: 'I\'m big!',
 
   //set in html-css-exercise template template
-  smallMessage: '',
+  smallMessage: 'I\'m small!',
 
   isSmall: false,
 
