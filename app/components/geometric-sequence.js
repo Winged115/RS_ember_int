@@ -35,7 +35,9 @@ export default Ember.Component.extend({
       if(sequence.length > 10) {
         sequence.pop();
       }
-      console.log(sequence);
+      if(highestValue === Math.pow(2, 15)) {
+        console.log("&&&&&&&&&&&&&&&&&&&&&&")
+      }
     }
   }
 });
