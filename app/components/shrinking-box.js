@@ -23,7 +23,8 @@ export default Ember.Component.extend({
 
   click: function(){
   	this.toggleProperty('isSmall');
-  	console.log(this.get('isSmall'));
+  	//Below to check if click was toggling boolean in property.
+  	//console.log(this.get('isSmall'));
     //toggle this component's isSmall property here
   }
 
