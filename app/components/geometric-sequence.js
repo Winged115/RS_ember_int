@@ -23,7 +23,7 @@ export default Ember.Component.extend({
     var reverse = sequence;
 
     //reverse the array here
-
+    reverse.reverse();
     return reverse;
   }),
 
@@ -31,7 +31,9 @@ export default Ember.Component.extend({
     updateSequence: function(){
       var sequence = this.get("geometricSequence");
       //Modify the sequence here
-      sequence.push(sequence[sequence.length - 1] * 2);
+      var highestValue = Math.max.apply(Math, sequence);
+      sequence.push(highestValue * 2);
+      sequence.unshift(sequence.pop());
       console.log(sequence);
     }
   }
