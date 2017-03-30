@@ -8,3 +8,11 @@
     height:120px;
     margin: 2em;
 }
+
+.is-expired {
+	border: 1px solid red;
+}
+
+.credit-card:not(.is-expired) {
+	border: 1px solid green;
+}
