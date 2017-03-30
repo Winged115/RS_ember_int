@@ -21,18 +21,23 @@ export default Ember.Component.extend({
   reverseSequence: Ember.computed('geometricSequence', 'geometricSequence.@each', function() {
     var sequence = this.get("geometricSequence");
     var reverse = sequence;
-
     //reverse the array here
-
+    reverse.sort(function(a, b){return b - a});
     return reverse;
   }),
 
   actions:{
     updateSequence: function(){
       var sequence = this.get("geometricSequence");
-      alert("Trying to update sequence (You can remove this alert)");
-
       //Modify the sequence here
+      if(sequence[0] === Math.pow(2, 15)) {
+        return this.initializeSequence();
+      }
+      var highestValue = Math.max.apply(Math, sequence);
+      sequence.unshiftObject(highestValue * 2);
+      if(sequence.length > 10) {
+        sequence.pop();
+      }
     }
   }
 });
